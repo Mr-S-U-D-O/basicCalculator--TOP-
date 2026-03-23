@@ -25,7 +25,7 @@
 
 /* ===== Main Layout Section ===== */
 .main-container {
-  border: 2px solid gold;
+  border: 2px solid #1a1b1e;
   display: flex;
   flex-direction: row;
   min-height: 79dvh;
@@ -42,7 +42,7 @@
   flex-direction: row;
   border: 2px solid var(--bg-color, #1a1b1e);
   flex: 1;
-  gap: 20px;
+
   border-radius: 30px;
   overflow: hidden;
 }
@@ -54,14 +54,6 @@
   gap: 20px;
   padding: 20px;
   background-color: var(--bg-color, #1a1b1e);
-}
-
-/* ===== Display + Operator Section ===== */
-.display-and-operator-container {
-  flex: 1;
-  border: 2px solid darkblue;
-  display: flex;
-  flex-direction: column;
 }
 
 /* ===== Shared Button Styling ===== */
@@ -94,11 +86,45 @@
   box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
 }
 
+/* ===== Display + Operator Section ===== */
+.display-and-operator-container {
+  flex: 1;
+  border: 2px solid #1a1b1e;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 30px;
+  gap: 10px;
+
+  background-color: var(--bg-color, #1a1b1e);
+}
+
 /* ===== Display Screen Area ===== */
 .calcu-display-screens {
-  border: 2px solid rgb(182, 18, 160);
+  border: 2px solid #1a1b1e;
+  flex: 1 1 30%;
+  cborder-radius: 30px;
+  border-radius: 30px;
+  transition: all 0.3s;
+  color: #090909;
+
+  -webkit-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
+  -moz-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
+  box-shadow: inset 0px 0px 40px -7px #1a1b1e;
+  /*padding: 0.7em 1.7em;*/
+  font-size: 38px;
+
+  background: #e8e8e8;
 }
 
 .hide-btn {
   visibility: hidden;
 }
+
+.arithmatic-btn-container {
+  border: 2px solid rgb(17, 228, 9);
+  flex: 1 1 70%;
+  display: flex;
+  flex-direction: row;
+}
+
