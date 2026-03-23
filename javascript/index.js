@@ -15,29 +15,24 @@ FEAT : Create 4 functions
 // Arithmetic Operations
 // =========================
 
+const runOperation = (num1, num2, operation) => {
+  const result = operation(num1, num2);
+  console.log(result);
+  return result;
+};
+
 // 1. addition(a, b)
 
-const addition = (num1, num2) => {
-  let addResult = num1 + num2;
-  console.log(addResult);
-  return addResult;
-};
+const addition = (num1, num2) => runOperation(num1, num2, (a, b) => a + b);
 
 // 2. subtraction(a, b)
 
-const subtraction = (num1, num2) => {
-  let subResult = num1 - num2;
-  console.log(subResult);
-  return subResult;
-};
+const subtraction = (num1, num2) => runOperation(num1, num2, (a, b) => a - b);
 
 // 3. multiplication(a, b)
 
-const multiplication = (num1, num2) => {
-  let multiResult = num1 * num2;
-  console.log(multiResult);
-  return multiResult;
-};
+const multiplication = (num1, num2) =>
+  runOperation(num1, num2, (a, b) => a * b);
 
 // =========================
 // Division + Remainder
@@ -45,19 +40,11 @@ const multiplication = (num1, num2) => {
 
 // division(a, b)
 
-const division = (num1, num2) => {
-  let divResult = num1 / num2;
-  console.log(divResult);
-  return divResult;
-};
+const division = (num1, num2) => runOperation(num1, num2, (a, b) => a / b);
 
 // modulus(a, b)
 
-const modulus = (num1, num2) => {
-  let modResult = num1 % num2;
-  console.log(modResult);
-  return modResult;
-};
+const modulus = (num1, num2) => runOperation(num1, num2, (a, b) => a % b);
 
 // =========================
 // Advanced Operations
@@ -65,8 +52,5 @@ const modulus = (num1, num2) => {
 
 // Exponentiation(a, b)
 
-const exponentiation = (num1, num2) => {
-  let expoResult = num1 % num2;
-  console.log(expoResult);
-  return expoResult;
-};
+const exponentiation = (num1, num2) =>
+  runOperation(num1, num2, (a, b) => a % b);

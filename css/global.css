@@ -8,13 +8,32 @@
 :root {
   /* Colors */
   --primary-color: #ff0000;
-  --secondary-color: #;
-  --third-color: #;
+  --secondary-color: #e8e8e8;
+  --third-color: #090909;
   --accent-color: var(--primary-color);
 
   --bg-color: #1a1b1e;
   --text-color: #dcdfe4;
-  --text-muted: #;
+  --text-muted: #666666;
+
+  /* Calculator Theme Tokens */
+  --calc-border-color: var(--bg-color);
+  --calc-surface-color: var(--secondary-color);
+  --calc-btn-text-color: var(--third-color);
+  --calc-btn-active-text-color: var(--text-muted);
+  --calc-shadow-color-rgb: 26, 27, 30;
+  --calc-shadow-inset: inset 0px 0px 40px -7px
+    rgba(var(--calc-shadow-color-rgb), 1);
+  --calc-shadow-inset-pressed: inset 0px 0px 40px -24px
+    rgba(var(--calc-shadow-color-rgb), 1);
+  --calc-radius-lg: 30px;
+  --calc-space-2xs: 2px;
+  --calc-space-xs: 10px;
+  --calc-space-sm: 15px;
+  --calc-space-md: 20px;
+  --calc-space-lg: 25px;
+  --calc-space-xl: 30px;
+  --calc-font-size-lg: 38px;
 
   /* Typography */
   --font-main: "Iosevka Charon", monospace;

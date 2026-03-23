@@ -1,130 +1,173 @@
 @import "global.css";
 
+/* ===== Shared Surface Styling (Non-Button) ===== */
+.heading-container,
+.main-container,
+.display-and-operator-container,
+.calcu-display-screens,
+.arithmetic-btn-container,
+.operator-btns-containers,
+.operator-btn-container {
+  border: 2px solid var(--calc-border-color, #1a1b1e);
+}
+
+.heading-container,
+.main-container,
+.numberpad-container,
+.display-and-operator-container,
+.calcu-display-screens {
+  border-radius: var(--calc-radius-lg, 30px);
+}
+
+.heading-container,
+.calcu-display-screens {
+  -webkit-box-shadow: var(--calc-shadow-inset);
+  -moz-box-shadow: var(--calc-shadow-inset);
+  box-shadow: var(--calc-shadow-inset);
+}
+
+.heading-container,
+.main-container,
+.calcu-display-screens {
+  background-color: var(--calc-surface-color, #e8e8e8);
+}
+
+.main-container,
+.numberpad-container,
+.arithmetic-btn-container,
+.operator-btns-containers {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-numberedpad-container,
+.display-and-operator-container,
+.operator-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ===== Header Section ===== */
 .header-container {
-  padding: 20px;
+  padding: var(--calc-space-md, 20px);
 }
 
 .heading-container {
-  border: 2px solid #1a1b1e;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: #e8e8e8;
-  -webkit-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
-  -moz-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
-  box-shadow: inset 0px 0px 40px -7px #1a1b1e;
+  padding: var(--calc-space-sm, 15px);
 }
 
 .sub-heading {
-  color: #1a1b1e;
+  color: var(--calc-border-color, #1a1b1e);
 }
 .heading {
-  font-size: 30px;
-  color: #1a1b1e;
+  font-size: var(--calc-space-xl, 30px);
+  color: var(--calc-border-color, #1a1b1e);
 }
 
 /* ===== Main Layout Section ===== */
 .main-container {
-  border: 2px solid #1a1b1e;
-  display: flex;
-  flex-direction: row;
   min-height: 79dvh;
-  margin: 0 25px 25px 25px;
-  padding: 20px;
-  gap: 10px;
-  background-color: #e8e8e8;
-  border-radius: 30px;
+  margin: 0 var(--calc-space-lg, 25px) var(--calc-space-lg, 25px)
+    var(--calc-space-lg, 25px);
+  padding: var(--calc-space-md, 20px);
+  gap: var(--calc-space-xs, 10px);
 }
 
 /* ===== Number Pad Section ===== */
 .numberpad-container {
-  display: flex;
-  flex-direction: row;
   border: 2px solid var(--bg-color, #1a1b1e);
   flex: 1;
 
-  border-radius: 30px;
   overflow: hidden;
 }
 
 .row-numberedpad-container {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  gap: var(--calc-space-md, 20px);
+  padding: var(--calc-space-md, 20px);
   background-color: var(--bg-color, #1a1b1e);
 }
 
 /* ===== Shared Button Styling ===== */
-.calc-btn {
-  border: 2px solid #1a1b1e;
-  flex: 1;
-  height: fit-content;
+.btn {
+  border: 2px solid var(--calc-border-color, #1a1b1e);
   display: flex; /* Center content */
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
-  transition: all 0.3s;
-  color: #090909;
+  border-radius: var(--calc-radius-lg, 30px);
+  transition: all var(--transition-speed, 0.3s);
+  color: var(--calc-btn-text-color, #090909);
 
-  -webkit-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
-  -moz-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
-  box-shadow: inset 0px 0px 40px -7px #1a1b1e;
+  -webkit-box-shadow: var(--calc-shadow-inset);
+  -moz-box-shadow: var(--calc-shadow-inset);
+  box-shadow: var(--calc-shadow-inset);
   /*padding: 0.7em 1.7em;*/
-  font-size: 38px;
+  font-size: var(--calc-font-size-lg, 38px);
 
-  background: #e8e8e8;
+  background: var(--calc-surface-color, #e8e8e8);
   cursor: pointer;
 }
 
-.calc-btn:active {
-  color: #666;
+.btn:active {
+  color: var(--calc-btn-active-text-color, #666666);
 
-  -webkit-box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
-  -moz-box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
-  box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
+  -webkit-box-shadow: var(--calc-shadow-inset-pressed);
+  -moz-box-shadow: var(--calc-shadow-inset-pressed);
+  box-shadow: var(--calc-shadow-inset-pressed);
+}
+
+.calc-btn {
+  flex: 1;
+  height: fit-content;
 }
 
 /* ===== Display + Operator Section ===== */
 .display-and-operator-container {
   flex: 1;
-  border: 2px solid #1a1b1e;
-  display: flex;
-  flex-direction: column;
-  border-radius: 30px;
-  padding: 30px;
-  gap: 10px;
+  padding: var(--calc-space-xl, 30px);
+  gap: var(--calc-space-xs, 10px);
 
   background-color: var(--bg-color, #1a1b1e);
 }
 
 /* ===== Display Screen Area ===== */
 .calcu-display-screens {
-  border: 2px solid #1a1b1e;
   flex: 1 1 30%;
-  cborder-radius: 30px;
-  border-radius: 30px;
-  transition: all 0.3s;
-  color: #090909;
 
-  -webkit-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
-  -moz-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
-  box-shadow: inset 0px 0px 40px -7px #1a1b1e;
+  transition: all var(--transition-speed, 0.3s);
+  color: var(--calc-btn-text-color, #090909);
   /*padding: 0.7em 1.7em;*/
-  font-size: 38px;
-
-  background: #e8e8e8;
+  font-size: var(--calc-font-size-lg, 38px);
 }
 
 .hide-btn {
   visibility: hidden;
 }
 
-.arithmatic-btn-container {
-  border: 2px solid rgb(17, 228, 9);
+.arithmetic-btn-container {
   flex: 1 1 70%;
-  display: flex;
-  flex-direction: row;
+  gap: var(--calc-space-2xs, 2px);
 }
 
+.operator-btns-containers {
+  flex: 1 1 70%;
+  flex-wrap: wrap;
+}
+
+.operator-btn-container {
+  flex: 1;
+  gap: var(--calc-space-xs, 10px);
+}
+
+.calc-sign-btn {
+  flex: 1;
+}
+
+.equals-to-btn-container {
+  flex: 1 1 30%;
+  display: flex;
+}
+
+.calc-equals-to-sign-btn {
+  flex: 1 1 100%;
+}
