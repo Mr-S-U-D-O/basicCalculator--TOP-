@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-ZA">
   <head>
+    <!-- Core Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header class="header-container">
       <div class="heading-container">
         <span class="sub-heading">Basic calculator by....</span>
@@ -30,35 +32,41 @@
       </div>
     </header>
 
+    <!-- Main Calculator Section -->
     <main class="main-container">
+      <!-- Number Pad Section -->
       <div class="numberpad-container">
-          <div class="left-row-numberedpad-container">
-              <div class="calc-btn"></div>
-              <div class="calc-btn"></div>
-              <div class="calc-btn"></div>
-              <div class="calc-btn zero-calc-btn"></div>
-          </div>
-          <div class="middle-row-numberedpad-container">
-              <div class="calc-btn"></div>
-              <div class="calc-btn"></div>
-              <div class="calc-btn"></div>
-              <div class="calc-btn zero-calc-btn"></div>
-
-          </div>
-          <div class="right-row-numberedpad-container">
-              <div class="calc-btn"></div>
-              <div class="calc-btn"></div>
-              <div class="calc-btn"></div>
-              <div class="calc-btn zero-calc-btn"></div>
-
-          </div>
-
+        <div class="row-numberedpad-container">
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn hide-btn"></button>
+        </div>
+        <div class="row-numberedpad-container">
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn zero-calc-btn"></button>
+        </div>
+        <div class="row-numberedpad-container">
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn"></button>
+          <button type="button" class="calc-btn hide-btn"></button>
+        </div>
       </div>
+
+      <!-- Display + Operators Section -->
       <div class="display-and-operator-container">
-        
+        <div class="calcu-display-screens"></div>
+        <div class="arithmatic-btn-container">
+          <div class="concatinator-btns-containers"></div>
+          <div class="equals-to-btn-container"></div>
+        </div>
       </div>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer-container"></footer>
 
     <!-- Scripts -->

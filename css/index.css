@@ -1,9 +1,11 @@
 @import "global.css";
 
+/* ===== Header Section ===== */
 .header-container {
   border: 2px solid green;
   padding: 20px;
 }
+
 .heading-container {
   border: 2px solid purple;
   padding: 15px;
@@ -13,57 +15,64 @@
   font-size: 30px;
 }
 
+/* ===== Main Layout Section ===== */
 .main-container {
   border: 2px solid gold;
   display: flex;
   flex-direction: row;
   min-height: 79dvh;
+  margin: 0 25px 25px 25px;
+  padding: 20px;
+  gap: 10px;
+  background-color: antiquewhite;
+  border-radius: 30px;
 }
 
-.numberpad-container{
-    display: flex;
+/* ===== Number Pad Section ===== */
+.numberpad-container {
+  display: flex;
   flex-direction: row;
-  border: 2px solid white;
+  border: 2px solid var(--bg-color, #1a1b1e);
   flex: 1;
+  gap: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.row-numberedpad-container {
+  
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 20px;
+  background-color: var(--bg-color, #1a1b1e);
   
 }
 
-.left-row-numberedpad-container{
-    border: 2px solid rgb(255, 0, 179);
-    flex: 1;
-    display: flex;
-    flex-direction: column;                /* Center content */
-    
+
+
+/* ===== Display + Operator Section ===== */
+.display-and-operator-container {
+  flex: 1;
+  border: 10px solid lightblue;
 }
 
-.middle-row-numberedpad-container{
-    border: 2px solid rgb(255, 1, 43);
-    flex: 1;
-    display: flex;
-    flex-direction: column;                /* Center content */
-    
+/* ===== Shared Button Styling ===== */
+.calc-btn {
+  border: 2px solid rgb(47, 180, 98);
+  flex: 1;
+  height: fit-content;
+  display: flex; /* Center content */
+  align-items: center;
+  justify-content: center;
 }
 
-.right-row-numberedpad-container{
-    border: 2px solid rgb(229, 255, 0);
-    flex: 1;
-    display: flex;
-flex-direction: column;
-
-
+/* ===== Display Screen Area ===== */
+.calcu-display-screens {
+  border: 2px solid rgb(182, 18, 160);
 }
 
-
-.display-and-operator-container{
-    flex: 1;
-    border: 10px solid lightblue;
-}
-
-.calc-btn{
-    border: 2px solid rgb(47, 180, 98); 
-    flex: 1;
-    height: fit-content;
-    display: flex;                /* Center content */
-    align-items: center;
-    justify-content: center;
+.hide-btn {
+  visibility: hidden;
 }

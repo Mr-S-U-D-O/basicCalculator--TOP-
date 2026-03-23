@@ -1,14 +1,14 @@
-
 /* 
 =========================|
     Sudo Reset v1.2      |
 =========================|
 */
 
+/* ===== CSS Variables / Theme Tokens ===== */
 :root {
   /* Colors */
   --primary-color: #ff0000;
-  --secondary-color: #; 
+  --secondary-color: #;
   --third-color: #;
   --accent-color: var(--primary-color);
 
@@ -33,9 +33,10 @@
   --radius: 4px;
 }
 
+/* ===== External Font Imports ===== */
 @import url("https://fonts.googleapis.com/css2?family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* --- THE RESET --- */
+/* ===== Base Reset ===== */
 
 *,
 *::before,
@@ -62,7 +63,13 @@ body {
   overflow-wrap: break-word;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* ===== Typography Defaults ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   line-height: var(--line-height-heading);
   text-wrap: balance;
@@ -75,19 +82,29 @@ p {
   max-width: 75ch;
 }
 
-ul[class], ol[class] {
+/* ===== List / Media Defaults ===== */
+ul[class],
+ol[class] {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-input, button, textarea, select {
+/* ===== Form Control Defaults ===== */
+input,
+button,
+textarea,
+select {
   font: inherit;
   color: inherit;
   background: transparent;
@@ -103,11 +120,14 @@ input[type="radio"] {
   accent-color: var(--primary-color);
 }
 
+/* ===== Reduced Motion Accessibility ===== */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -115,6 +135,7 @@ input[type="radio"] {
   }
 }
 
+/* ===== Focus Visibility ===== */
 :focus-visible {
   outline: 2px solid var(--accent-color);
   outline-offset: 4px;

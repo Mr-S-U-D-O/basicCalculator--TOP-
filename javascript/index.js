@@ -11,6 +11,10 @@ FEAT : Create 4 functions
 ===============================================================
 **/
 
+// =========================
+// Arithmetic Operations
+// =========================
+
 // 1. addition(a, b)
 
 const addition = (num1, num2) => {
@@ -35,6 +39,10 @@ const multiplication = (num1, num2) => {
   return multiResult;
 };
 
+// =========================
+// Division + Remainder
+// =========================
+
 // division(a, b)
 
 const division = (num1, num2) => {
@@ -50,6 +58,10 @@ const modulus = (num1, num2) => {
   console.log(modResult);
   return modResult;
 };
+
+// =========================
+// Advanced Operations
+// =========================
 
 // Exponentiation(a, b)
 
