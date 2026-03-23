@@ -2,17 +2,25 @@
 
 /* ===== Header Section ===== */
 .header-container {
-  border: 2px solid green;
   padding: 20px;
 }
 
 .heading-container {
-  border: 2px solid purple;
+  border: 2px solid #1a1b1e;
   padding: 15px;
+  border-radius: 30px;
+  background-color: #e8e8e8;
+  -webkit-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
+  -moz-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
+  box-shadow: inset 0px 0px 40px -7px #1a1b1e;
 }
 
+.sub-heading {
+  color: #1a1b1e;
+}
 .heading {
   font-size: 30px;
+  color: #1a1b1e;
 }
 
 /* ===== Main Layout Section ===== */
@@ -24,7 +32,7 @@
   margin: 0 25px 25px 25px;
   padding: 20px;
   gap: 10px;
-  background-color: antiquewhite;
+  background-color: #e8e8e8;
   border-radius: 30px;
 }
 
@@ -40,32 +48,50 @@
 }
 
 .row-numberedpad-container {
-  
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
   padding: 20px;
   background-color: var(--bg-color, #1a1b1e);
-  
 }
-
-
 
 /* ===== Display + Operator Section ===== */
 .display-and-operator-container {
   flex: 1;
-  border: 10px solid lightblue;
+  border: 2px solid darkblue;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ===== Shared Button Styling ===== */
 .calc-btn {
-  border: 2px solid rgb(47, 180, 98);
+  border: 2px solid #1a1b1e;
   flex: 1;
   height: fit-content;
   display: flex; /* Center content */
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
+  transition: all 0.3s;
+  color: #090909;
+
+  -webkit-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
+  -moz-box-shadow: inset 0px 0px 40px -7px rgba(26, 27, 30, 1);
+  box-shadow: inset 0px 0px 40px -7px #1a1b1e;
+  /*padding: 0.7em 1.7em;*/
+  font-size: 38px;
+
+  background: #e8e8e8;
+  cursor: pointer;
+}
+
+.calc-btn:active {
+  color: #666;
+
+  -webkit-box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
+  -moz-box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
+  box-shadow: inset 0px 0px 40px -24px rgba(26, 27, 30, 1);
 }
 
 /* ===== Display Screen Area ===== */
