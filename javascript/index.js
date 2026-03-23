@@ -54,8 +54,7 @@ const modulus = (num1, num2) => {
 // Exponentiation(a, b)
 
 const exponentiation = (num1, num2) => {
-  let  expoResult = num1 % num2;
+  let expoResult = num1 % num2;
   console.log(expoResult);
   return expoResult;
 };
-
