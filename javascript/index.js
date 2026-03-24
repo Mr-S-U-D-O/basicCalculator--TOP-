@@ -57,8 +57,6 @@ const exponentiation = (num1, num2) =>
 
 /*=================================================*/
 
-const numberBtnParent = document.querySelector(".parent");
-
 const numberBtnContainer = document.querySelector(".numberpad-container");
 
 numberBtnContainer.addEventListener("click", (event) => {
@@ -70,6 +68,10 @@ numberBtnContainer.addEventListener("click", (event) => {
 
   // Use the class name or a data-attribute to decide what to do
   if (selectedBtnContainer.classList.contains("one")) {
+    let selectedBtn = document.querySelector(".one");
+    let theClikedNumber = parseInt(selectedBtn.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("you clicked on btn 1");
   } else if (selectedBtnContainer.classList.contains("two")) {
     console.log("you clicked on btn 2");
@@ -88,5 +90,4 @@ numberBtnContainer.addEventListener("click", (event) => {
   } else if (selectedBtnContainer.classList.contains("nine")) {
     console.log("Action for button 9");
   }
-  
 });
