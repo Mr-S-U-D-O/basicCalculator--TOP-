@@ -16,6 +16,7 @@ FEAT : Create 4 functions
 // =========================
 
 const runOperation = (num1, num2, operation) => {
+  // Centralized executor so each math function only provides its formula.
   const result = operation(num1, num2);
   console.log(result);
   return result;
@@ -59,6 +60,7 @@ const exponentiation = (num1, num2) =>
 
 const numberBtnContainer = document.querySelector(".numberpad-container");
 
+// Event delegation: one listener handles all number buttons inside the container.
 numberBtnContainer.addEventListener("click", (event) => {
   // Find the nearest button from where the click happened
   const selectedBtnContainer = event.target.closest("button");
@@ -68,6 +70,7 @@ numberBtnContainer.addEventListener("click", (event) => {
 
   // Use the class name or a data-attribute to decide what to do
   if (selectedBtnContainer.classList.contains("one")) {
+    // Read the visible label and convert it into a number value.
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
