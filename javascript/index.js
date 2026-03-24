@@ -22,21 +22,25 @@ const runOperation = (num1, num2, operation) => {
   return result;
 };
 // 1. addition(a, b)
-
 const addition = (num1, num2) => runOperation(num1, num2, (a, b) => a + b);
 // 2. subtraction(a, b)
 const subtraction = (num1, num2) => runOperation(num1, num2, (a, b) => a - b);
 // 3. multiplication(a, b)
-const multiplication = (num1, num2) => runOperation(num1, num2, (a, b) => a * b);
+const multiplication = (num1, num2) =>
+  runOperation(num1, num2, (a, b) => a * b);
 // division(a, b)
 const division = (num1, num2) => runOperation(num1, num2, (a, b) => a / b);
 // modulus(a, b)
 const modulus = (num1, num2) => runOperation(num1, num2, (a, b) => a % b);
 // Exponentiation(a, b)
-const exponentiation = (num1, num2) => runOperation(num1, num2, (a, b) => a % b);
+const exponentiation = (num1, num2) =>
+  runOperation(num1, num2, (a, b) => a % b);
 /*=================================================*/
 
 const numberBtnContainer = document.querySelector(".numberpad-container");
+let selectedfirstNumber = null;
+let selectedOperator = null;
+let selectedSecondNumber = null;
 
 // Event delegation: one listener handles all number buttons inside the container.
 numberBtnContainer.addEventListener("click", (event) => {
@@ -58,51 +62,62 @@ numberBtnContainer.addEventListener("click", (event) => {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("you clicked on btn 2");
   } else if (selectedBtnContainer.classList.contains("three")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("you clicked on btn 3");
   } else if (selectedBtnContainer.classList.contains("four")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("you clicked on btn 4");
   } else if (selectedBtnContainer.classList.contains("five")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("you clicked on btn 5");
   } else if (selectedBtnContainer.classList.contains("six")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("Action for button 6");
   } else if (selectedBtnContainer.classList.contains("seven")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("Action for button 7");
   } else if (selectedBtnContainer.classList.contains("eight")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("Action for button 8");
   } else if (selectedBtnContainer.classList.contains("nine")) {
     let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("Action for button 9");
   }
+
+  
 });
 
-let firstDisplayedNumber = document.querySelector(".firstNumberInDisplay").textContent;
+let firstDisplayedNumber = document.querySelector(
+  ".firstNumberInDisplay",
+).textContent;
 console.log(firstDisplayedNumber);
-
 
 let clearBtn = document.querySelector(".clearBtn");
 
-clearBtn.addEventListener("click", ()  => {
+clearBtn.addEventListener("click", () => {
   // clears the numbers, but where are the numbers , right .
-} )
+});

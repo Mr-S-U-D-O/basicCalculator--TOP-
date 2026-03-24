@@ -17,3 +17,18 @@ what now ? when will they be visible  ?
 
 they will be visible only when a number is clicked right, yes.
 
+so we click a button , and then update the text content on the display right , then we remove the class . 
+
+...
+
+
+wait , after we return the clicked number , what happens to it, lets store it inside a variable for better manuplation. 
+
+
+i just thought about something , we need two numbers here.
+
+ive created variables for them , even the operator, but those variables are empty. how do you say if this is not empty in javascript ? 
+
+nah lets make the variables null , right , then if not null , or if null.
+
+do we need 
