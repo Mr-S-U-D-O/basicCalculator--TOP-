@@ -68,27 +68,50 @@ numberBtnContainer.addEventListener("click", (event) => {
 
   // Use the class name or a data-attribute to decide what to do
   if (selectedBtnContainer.classList.contains("one")) {
-    let selectedBtn = document.querySelector(".one");
-    let theClikedNumber = parseInt(selectedBtn.textContent);
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
     return theClikedNumber;
     console.log("you clicked on btn 1");
   } else if (selectedBtnContainer.classList.contains("two")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("you clicked on btn 2");
   } else if (selectedBtnContainer.classList.contains("three")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("you clicked on btn 3");
   } else if (selectedBtnContainer.classList.contains("four")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("you clicked on btn 4");
   } else if (selectedBtnContainer.classList.contains("five")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("you clicked on btn 5");
   } else if (selectedBtnContainer.classList.contains("six")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("Action for button 6");
   } else if (selectedBtnContainer.classList.contains("seven")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("Action for button 7");
   } else if (selectedBtnContainer.classList.contains("eight")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("Action for button 8");
   } else if (selectedBtnContainer.classList.contains("nine")) {
+    let theClikedNumber = parseInt(selectedBtnContainer.textContent);
+    console.log(typeof theClikedNumber);
+    console.log(theClikedNumber);
     console.log("Action for button 9");
   }
 });
