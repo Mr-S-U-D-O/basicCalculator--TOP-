@@ -72,6 +72,7 @@ numberBtnContainer.addEventListener("click", (event) => {
     let theClikedNumber = parseInt(selectedBtn.textContent);
     console.log(typeof theClikedNumber);
     console.log(theClikedNumber);
+    return theClikedNumber;
     console.log("you clicked on btn 1");
   } else if (selectedBtnContainer.classList.contains("two")) {
     console.log("you clicked on btn 2");
