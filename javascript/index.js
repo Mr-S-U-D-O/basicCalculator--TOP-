@@ -21,41 +21,19 @@ const runOperation = (num1, num2, operation) => {
   console.log(result);
   return result;
 };
-
 // 1. addition(a, b)
 
 const addition = (num1, num2) => runOperation(num1, num2, (a, b) => a + b);
-
 // 2. subtraction(a, b)
-
 const subtraction = (num1, num2) => runOperation(num1, num2, (a, b) => a - b);
-
 // 3. multiplication(a, b)
-
-const multiplication = (num1, num2) =>
-  runOperation(num1, num2, (a, b) => a * b);
-
-// =========================
-// Division + Remainder
-// =========================
-
+const multiplication = (num1, num2) => runOperation(num1, num2, (a, b) => a * b);
 // division(a, b)
-
 const division = (num1, num2) => runOperation(num1, num2, (a, b) => a / b);
-
 // modulus(a, b)
-
 const modulus = (num1, num2) => runOperation(num1, num2, (a, b) => a % b);
-
-// =========================
-// Advanced Operations
-// =========================
-
 // Exponentiation(a, b)
-
-const exponentiation = (num1, num2) =>
-  runOperation(num1, num2, (a, b) => a % b);
-
+const exponentiation = (num1, num2) => runOperation(num1, num2, (a, b) => a % b);
 /*=================================================*/
 
 const numberBtnContainer = document.querySelector(".numberpad-container");
@@ -118,3 +96,13 @@ numberBtnContainer.addEventListener("click", (event) => {
     console.log("Action for button 9");
   }
 });
+
+let firstDisplayedNumber = document.querySelector(".firstNumberInDisplay").textContent;
+console.log(firstDisplayedNumber);
+
+
+let clearBtn = document.querySelector(".clearBtn");
+
+clearBtn.addEventListener("click", ()  => {
+  // clears the numbers, but where are the numbers , right .
+} )
